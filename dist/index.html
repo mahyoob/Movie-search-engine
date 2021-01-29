@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/dist/style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body class="bg-gray-800">
+    <header>
+      <div class="md:flex header justify-between p-5 bg-gray-50 shadow-lg mb-7">
+        <div class="text-2xl">Movies search engine</div>
+        <div class="search md:flex justify-start">
+          <form id="movieForm" autocomplete="off">
+            <input
+              id="movie"
+              type="text"
+              name="movie"
+              class="h-8 w-80 p-2 rounded-md shadow-lg"
+              placeholder="Movie name"
+              required
+            />
+            <button title="search" type="submit">
+              <img src="img/search.svg" class="w-5" />
+            </button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <div class="movies-list"></div>
+    <footer
+      class="border-solid border-gray-400 border mt-10 md:pl-8 md:p-5 bg-gray-200"
+    >
+      <p>Copyright &copy; 2021 by Mahyoob Sarrawi.All rights reserved</p>
+    </footer>
+  </body>
+</html>
